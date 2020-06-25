@@ -18,7 +18,7 @@ public class SeeEnderChestCommand implements CommandExecutor{
 			return false;
 		}
 		final Player player = (Player)sender;
-		if(!player.hasPermission("inventory.see")) {
+		if(!player.hasPermission("inventoryviewer.enderchest.see")) {
 			sender.sendMessage(ChatColor.RED + "You don't have the permission to do that!");
 			return false;
 		}

@@ -18,7 +18,7 @@ public class SeeInventoryCommand implements CommandExecutor{
 			return false;
 		}
 		final Player player = (Player)sender;
-		if(!player.hasPermission("inventory.see")) {
+		if(!player.hasPermission("inventoryviewer.inventory.see")) {
 			sender.sendMessage(ChatColor.RED + "You don't have the permission to do that!");
 			return false;
 		}
@@ -32,6 +32,6 @@ public class SeeInventoryCommand implements CommandExecutor{
             return false;
         }
         player.openInventory((Inventory)target.getInventory());
-		return false;
+		return true;
 	}
 }

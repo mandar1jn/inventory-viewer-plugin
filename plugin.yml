@@ -6,7 +6,18 @@ commands:
     usage: /<command> <player>
     description: See and edit someones inventory
     aliases: [seeinv, invsee]
+    permission: inventoryviewer.inventory.see
+    permission-message: you don't have the permission to use that command
   seeenderchest:
     usage: /<command> <player>
     description: See and edit someones ender chest
     aliases: [seeechest]
+    permission: inventoryviewer.enderchest.see
+    permission-message: you don't have the permission to use that command
+api-version: 1.16
+author: Mandar1jn
+permissions:
+  inventoryviewer.inventory.see:
+    default: op
+  inventoryviewer.enderchest.see:
+    default: op
