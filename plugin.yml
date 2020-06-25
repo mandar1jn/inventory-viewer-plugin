@@ -1,0 +1,12 @@
+name: main
+main: io.github.mandar1jn.inventoryviewer.Main
+version: 1.0
+commands:
+  seeinventory:
+    usage: /<command> <player>
+    description: See and edit someones inventory
+    aliases: [seeinv, invsee]
+  seeenderchest:
+    usage: /<command> <player>
+    description: See and edit someones ender chest
+    aliases: [seeechest]
